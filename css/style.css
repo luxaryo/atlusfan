@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+h2 {
+    font-weight: 700;
+    color: grey;
+    border-left: 30px solid black;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: grey;
+    font-weight: 500;
+    margin: 10px 120px 10px 10px;
+    padding: 5px;
+    border-bottom: 4px solid red;
+    text-transform: uppercase;}
+
+/* pastillas */
+
+h5 {   
+    color: red;
+    font-weight: 500;
+    margin: 5px 0px 5px 0px;
+}
+
+
+.card {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.card img {
+    filter: grayscale(0%);
+}
+
+.card img:hover {
+    filter: grayscale(70%);
+}
+
+/* galeria */
+
+
+
+/* footer */
+
+.copy {
+    font-size: 0.7rem;
+    color: white;
+    padding: 10px;
+}
