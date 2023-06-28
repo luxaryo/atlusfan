@@ -18,8 +18,8 @@
     <a class="navbar-brand" href="#">
       <picture>
         <source media="(max-width: 990px)" srcset="img/atlus_logo_xs.png">
-        <img src="img/atlus_logo_xl.png" alt="">
-      </picture>
+        <img src="img/atlus_logo_xl.png" alt="Atlus Logo">
+      </picture></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -184,28 +184,39 @@ Demon's Souls: Uno de los mayores éxitos sorpresa de todos los tiempos, Demon's
 
 <section>
   <div id="contacto" class="container mt-5">
-    <h2>Contacto</h2>
-    <div class="row mt-4">
-      <div class="col-md-6 offset-md-3">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contacto</h2>
+        <div class="txt">Para obtener soporte general o técnico, sugerencias o comentarios podés rellenar el siguiente formulario.</div>
+        
         <form>
           <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="name" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
           </div>
           <div class="form-group">
-            <label for="lastname">Apellido</label>
-            <input type="text" class="form-control" id="lastname" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
           </div>
           <div class="form-group">
-            <label for="comment">Comentario</label>
-            <textarea class="form-control" id="comment" rows="5" required></textarea>
+            <label for="comentario">Comentario</label>
+            <textarea class="form-control" id="comentario" rows="5" placeholder="Ingresa tu comentario"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            Subscribirse al newsteller
+            </label>
+          </div>          
+          <button type="submit" class="btn btn-danger">Enviar</button>
         </form>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="img/joker.png" alt="Imagen de contacto">
       </div>
     </div>
   </div>
