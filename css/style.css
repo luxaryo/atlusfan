@@ -6,15 +6,36 @@ body {
 }
 
 @media (max-width: 990px) {
-    h2, h3 {font-size: 1.3rem;
-    
+
+        h2, h3 {font-size: 1.3rem;
+    }
+
+    .jack {display: none;}
+
+    .about {
+        margin-bottom: 10px;
+    }
+
 }
-}
+
+@media (min-width: 990px) {
+    .about {
+        padding: 50px;
+        background-color: #212121;
+        color: white;
+        margin: 60px;
+        font-size: 0.8rem;
+        }
+
+    .about h1 {
+        border-left: 30px transparent;
+    }
+}                                                                                                           
 
 h2 {
     font-weight: 700;
     color: grey;
-    border-left: 30px solid black;
+    border-left: 30px solid #212121;
     padding: 15px;
     text-transform: uppercase;
 }
@@ -24,13 +45,13 @@ h3 {
     font-weight: 500;
     margin: 10px 120px 10px 10px;
     padding: 5px;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid rgb(160, 41, 41);
     text-transform: uppercase;}
 
 /* pastillas */
 
 h5 {   
-    color: red;
+    color:  rgb(160, 41, 41);
     font-weight: 500;
     margin: 5px 0px 5px 0px;
 }
@@ -39,21 +60,39 @@ h5 {
 .card {
     font-size: 0.8rem;
     color: white;
+    background-color: #212121;
+}
+
+.card img {
+    margin-bottom: 5px;
 }
 
 /* mejorar animación */
 
 .card img {
-    filter: grayscale(0%);
+    opacity: 1;
+    transition: opacity 0.50s;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 .card img:hover {
-    filter: grayscale(70%);
+    opacity: 0.7;
 }
 
-/* galeria 
-agregar alguna animacion 
-*/
+/* galeria */
+
+.galeria img {
+    opacity: 0.5;
+    transition: opacity 0.50s;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.galeria img:hover {
+    opacity: 1;
+}
+
 
 
 /* formulario */
@@ -71,5 +110,10 @@ agregar alguna animacion
 .copy {
     font-size: 0.7rem;
     color: white;
-    padding: 10px;
+    padding: 5px;
+}
+
+.fab {color: white;padding: 10px;}
+.fab:hover {
+    color: #212121;
 }
